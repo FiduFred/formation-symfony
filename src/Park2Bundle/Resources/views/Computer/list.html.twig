@@ -1,0 +1,17 @@
+<h1>Computer list</h1>
+
+
+<table>
+    <thead><td>ID</td><td>Computer</td><td>IP</td><td>Status</td></thead>
+    <tbody>
+    {% for computer in computerlist  %}
+        <tr>
+            <td>{{ computer.id }}</td>
+            <td>{{ computer.name }}</td>
+            <td>{{ computer.ip }}</td>
+            <td>{%  if computer.enabled == false %} Disable {% else %} Enable {% endif %}</td>
+        </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
