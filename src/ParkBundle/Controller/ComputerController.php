@@ -12,8 +12,13 @@ class ComputerController extends Controller
      * @Route("/list")
      * @Template()
      */
-    public function listAction($name)
+    public function listAction()
     {
         //return array('name' => $name);
+    }
+
+    private function getlistAction()
+    {
+
     }
 }
