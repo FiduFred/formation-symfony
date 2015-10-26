@@ -10,11 +10,12 @@ class ComputerController extends Controller
 {
     /**
      * @Route("/list")
-     * @Template()
+     * @Template("ParkBundle:Computer:list.html.twig")
      */
     public function listAction()
     {
-        return $this->render('ParkBundle:Computer:list.html.twig', array('computerlist' =>$this->getlistAction()));
+        return array('computerlist' =>$this->getlistAction());
+        //return $this->render('ParkBundle:Computer:list.html.twig', array('computerlist' =>$this->getlistAction()));
     }
 
 
