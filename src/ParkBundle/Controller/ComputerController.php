@@ -38,6 +38,5 @@ class ComputerController extends Controller
                 'ip' => '192.168.0.4',
                 'enabled' => true)
         );
-
     }
 }
