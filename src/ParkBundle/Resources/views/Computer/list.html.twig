@@ -1,4 +1,8 @@
-<h1>Computer list</h1>
+{% extends 'ParkBundle::base.html.twig' %}
+
+{% block title %}
+    Computer list
+{% endblock %}
 
 
 <table>
@@ -11,7 +15,8 @@
             <td>{{ computer.ip }}</td>
             <td>{%  if computer.enabled == false %} Disable {% else %} Enable {% endif %}</td>
         </tr>
-
+    {% else %}
+        No Data
     {% endfor %}
     </tbody>
 </table>
